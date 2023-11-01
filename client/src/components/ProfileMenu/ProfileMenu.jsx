@@ -11,9 +11,9 @@ const ProfileMenu = ({ user, logout }) => {
 
   const getMenuStyle = (profileOpened) => {
     if (profileOpened) {
-      return { opacity: '0' }
+      return { display: 'none' }
     } else {
-      return { opacity: '100' }
+      return
     }
   }
   return (

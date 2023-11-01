@@ -1,0 +1,33 @@
+.properties-container {
+  gap: 0.5rem;
+}
+
+.properties-container .search-bar {
+  width: clamp(12rem, 100%, 28rem);
+  border-radius: 28px;
+  border: 1px solid rgba(85, 85, 85, 0.5);
+  flex-wrap: nowrap;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.properties-container .search-bar .button {
+  border-radius: 20px;
+}
+
+.properties-container .search-bar input {
+  width: 70%;
+}
+
+.properties-container > :nth-child(1) {
+  font-size: 22px;
+  color: rgb(29, 29, 29);
+  margin-right: 20px;
+  text-align: center;
+}
+
+@media (max-width: 820px) {
+  .properties-container > :nth-child(1) {
+    margin-right: 0;
+  }
+}

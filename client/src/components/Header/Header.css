@@ -1,0 +1,55 @@
+.h-wrapper {
+  z-index: 99;
+  top: 0;
+  position: sticky;
+}
+
+.h-container {
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.h-menu {
+  gap: 2rem;
+  z-index: 99;
+}
+
+.h-menu > *:hover {
+  cursor: pointer;
+}
+
+.h-menu > a:hover {
+  color: white;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .h-menu {
+    color: var(--black);
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    background: white;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    align-items: flex-start;
+    box-shadow: 2px 2px 4px 0.5px rgba(255, 255, 255, 0.151);
+    transition: all 400ms ease-in-out;
+  }
+
+  .h-menu > a:hover {
+    color: black;
+  }
+}

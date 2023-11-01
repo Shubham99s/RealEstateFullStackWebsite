@@ -1,0 +1,54 @@
+.profile {
+  gap: 0.2rem;
+}
+
+.user-image {
+  width: 45px;
+  border-radius: 15px;
+}
+
+.profile-menu {
+  color: black;
+  position: absolute;
+  top: 4.2rem;
+  background: #ffffff;
+  flex-direction: column;
+  font-weight: 500;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 5px;
+  align-items: flex-end;
+  box-shadow: 2px 2px 4px 0.5px rgba(255, 255, 255, 0.151);
+  transition: all 400ms ease-in-out;
+}
+
+.profile-menu > button {
+  background: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-menu > button:hover {
+  color: rgb(0, 17, 255);
+  text-decoration: underline;
+}
+
+.profile-menu > p:hover {
+  color: rgb(134, 134, 134);
+}
+
+@media (max-width: 768px) {
+  .profile-menu {
+    top: 12rem;
+    right: -2rem;
+    background: #292929;
+    color: white;
+  }
+
+  .profile-menu > button {
+    color: rgb(255, 255, 255);
+  }
+}
